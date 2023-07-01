@@ -26,16 +26,6 @@ namespace LearningWPF
             InitializeComponent();
 
             db = new AppContext();
-
-            List<User> users = db.Users.ToList();
-            string str = "";
-
-            foreach (User user in users)
-            {
-                str += user.password + " | ";
-            }
-
-            TempTextBlock.Text = str;
         }
 
         private void ButtonRegClick(object sender, RoutedEventArgs e)
