@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningWPF", "LearningWPF\LearningWPF.csproj", "{7769D1ED-6FBD-4647-A62F-C715391A15FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp", "LearningWPF\UserApp.csproj", "{7769D1ED-6FBD-4647-A62F-C715391A15FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{E24A273A-C48E-4837-A5C2-41C5C0FB0701}"
 EndProject

@@ -28,6 +28,7 @@ namespace Calculator
             foreach (UIElement el in MainGrid.Children)
                 if (el is Button)
                     ((Button)el).Click += ButtonClick;
+
         }
 
         private void ButtonClick(object sender, RoutedEventArgs e)
