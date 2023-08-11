@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ARM
+namespace MVVM
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -23,19 +23,7 @@ namespace ARM
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new AddApplicant());
-        }
-
-        private void FormOrderClick(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.RemoveBackEntry();
-            MainFrame.Navigate(new FormOrderPage());
-        }
-
-        private void AddApplicantClick(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.RemoveBackEntry();
-            MainFrame.Navigate(new AddApplicant());
+            DataContext = new ApplicationViewModel();
         }
     }
 }

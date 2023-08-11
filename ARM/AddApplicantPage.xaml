@@ -11,7 +11,46 @@
     <Grid>
         <TabControl Grid.Row="1">
             <TabItem FontSize="15" Header="Основные данные">
-                <Grid Background="#FFE5E5E5"/>
+                <StackPanel>
+                    <TextBlock Text="1. Паспортные данные"/>
+                    
+                    <StackPanel Orientation="Horizontal" Margin="15 0">
+                        <StackPanel Margin="0 0 10 0">
+                            <TextBlock Text="Серия:"/>
+                            <TextBox Width="120"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="10 0 0 0">
+                            <TextBlock Text="Номер:"/>
+                            <TextBox Width="120"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <TextBlock Text="Адрес по прописке:" Margin="15 0 0 0"/>
+                    <TextBox Margin="15 0 15 0"/>
+
+                    <TextBlock Text="2. Данные аттестата / диплома СПО"/>
+                    
+                    <StackPanel Orientation="Horizontal" Margin="15 0">
+                        <StackPanel Margin="0 0 10 0">
+                            <TextBlock Text="Серия:"/>
+                            <TextBox Width="120"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="10 0 0 0">
+                            <TextBlock Text="Номер:"/>
+                            <TextBox Width="120"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <TextBlock Text="Образовательная организация:" Margin="15 0 0 0"/>
+                    <TextBox Margin="15 0 15 0"/>
+
+                    <TextBlock Text="3. Дополнительные сведения"/>
+                    <TextBox Margin="15 2 15 0" MinLines="7"/>
+
+                    <InkCanvas/>
+                </StackPanel>
             </TabItem>
             <TabItem FontSize="15" Header="Направления, экзамены">
                 <Grid Background="#FFE5E5E5"/>
