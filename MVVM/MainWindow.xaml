@@ -7,15 +7,22 @@
         mc:Ignorable="d"
         Title="Список телефонов" Height="450" Width="800">
     <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Margin" Value="10"/>
-            <Setter Property="Padding" Value="10"/>
-        </Style>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Margin" Value="0 5"/>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="RussianLocalization.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+            </Style>
+            
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="0 5"/>
+            </Style>
+        </ResourceDictionary>
     </Window.Resources>
     
     <Grid>
@@ -51,15 +58,18 @@
                         CommandParameter="{Binding SelectedPhone}"/>
             </StackPanel>
         </Grid>
-        
 
         <StackPanel Grid.Column="1" DataContext="{Binding SelectedPhone}">
-            <TextBlock Text="Выбранный элемент"/>
-            <TextBlock Text="Модель"/>
+            <ComboBox SelectedIndex="0" HorizontalAlignment="Right">
+                <ComboBoxItem Content="РУС"/>
+                <ComboBoxItem Content="EN"/>
+            </ComboBox>
+            <TextBlock Text="{StaticResource SelectedElement}"/>
+            <TextBlock Text="{StaticResource Model}"/>
             <TextBox Text="{Binding Path=Title, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Производитель"/>
+            <TextBlock Text="{StaticResource Company}"/>
             <TextBox Text="{Binding Path=Company, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBlock Text="Цена"/>
+            <TextBlock Text="{StaticResource Price}"/>
             <TextBox Text="{Binding Path=Price, UpdateSourceTrigger=PropertyChanged}"/>
         </StackPanel>
     </Grid>
