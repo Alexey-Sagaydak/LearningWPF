@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "MVVM\MVVM.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxWithIcons", "ListBox with icons\ListBoxWithIcons.csproj", "{776F8B36-3BEF-4B47-B2A6-2BECA8E242C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuNavigation", "MenuNavigation\MenuNavigation.csproj", "{91114722-AFD1-4A31-AB73-C138A5F208B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{776F8B36-3BEF-4B47-B2A6-2BECA8E242C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776F8B36-3BEF-4B47-B2A6-2BECA8E242C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776F8B36-3BEF-4B47-B2A6-2BECA8E242C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91114722-AFD1-4A31-AB73-C138A5F208B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91114722-AFD1-4A31-AB73-C138A5F208B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91114722-AFD1-4A31-AB73-C138A5F208B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91114722-AFD1-4A31-AB73-C138A5F208B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
